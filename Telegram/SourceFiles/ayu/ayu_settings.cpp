@@ -3,7 +3,7 @@
 // We do not and cannot prevent the use of our code,
 // but be respectful and credit the original author.
 //
-// Copyright @Radolyn, 2024
+// Copyright @Radolyn, 2025
 #include "ayu_settings.h"
 
 #include "ayu/ui/ayu_logo.h"
@@ -240,6 +240,7 @@ AyuGramSettings::AyuGramSettings() {
 #endif
 	;
 	simpleQuotesAndReplies = true;
+	replaceBottomInfoWithIcons = false;
 	deletedMark = "🧹";
 	editedMark = Core::IsAppLaunched() ? tr::lng_edited(tr::now) : QString("edited");
 	recentStickersCount = 100;
@@ -417,6 +418,10 @@ void AyuGramSettings::set_appIcon(QString val) {
 
 void AyuGramSettings::set_simpleQuotesAndReplies(bool val) {
 	simpleQuotesAndReplies = val;
+}
+
+void AyuGramSettings::set_replaceBottomInfoWithIcons(bool val) {
+	replaceBottomInfoWithIcons = val;
 }
 
 void AyuGramSettings::set_deletedMark(QString val) {

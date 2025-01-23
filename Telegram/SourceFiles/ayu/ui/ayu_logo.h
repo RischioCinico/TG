@@ -3,7 +3,7 @@
 // We do not and cannot prevent the use of our code,
 // but be respectful and credit the original author.
 //
-// Copyright @Radolyn, 2024
+// Copyright @Radolyn, 2025
 #pragma once
 
 #define ICON(name, value) const auto name##_ICON = QStringLiteral(value)
@@ -22,6 +22,7 @@ ICON(YAPLUS, "yaplus");
 ICON(WIN95, "win95");
 ICON(CHIBI, "chibi");
 ICON(CHIBI2, "chibi2");
+ICON(EXTERA2, "extera2");
 
 void loadAppIco();
 

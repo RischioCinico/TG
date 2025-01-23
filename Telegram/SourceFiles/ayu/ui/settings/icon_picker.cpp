@@ -3,7 +3,7 @@
 // We do not and cannot prevent the use of our code,
 // but be respectful and credit the original author.
 //
-// Copyright @Radolyn, 2024
+// Copyright @Radolyn, 2025
 #include "icon_picker.h"
 #include "tray.h"
 #include "ayu/ayu_settings.h"
@@ -35,6 +35,7 @@ const QVector<QString> icons{
 	AyuAssets::WIN95_ICON,
 	AyuAssets::CHIBI_ICON,
 	AyuAssets::CHIBI2_ICON,
+	AyuAssets::EXTERA2_ICON,
 };
 
 const auto rows = static_cast<int>(icons.size()) / 4 + std::min(1, static_cast<int>(icons.size()) % 4);
